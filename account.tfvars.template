@@ -1,0 +1,3 @@
+tenancy_ocid = "ocid1.tenancy..."
+compartment_id = "ocid1.compartment..."
+user_ocid = "ocid1.user..."

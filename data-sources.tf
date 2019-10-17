@@ -1,10 +1,14 @@
 data "oci_core_images" "images" {
   compartment_id = "${var.compartment_id}"
 
-  # operating_system = "CentOS"
-  # operating_system_version = "7"
-  operating_system = "Oracle Linux"
-  operating_system_version = "7.7"
+#
+# Select either the CentOS values here...
+  operating_system = "CentOS"
+  operating_system_version = "7"
+#
+# ...or the Oracle Linux values here...
+  # operating_system = "Oracle Linux"
+  # operating_system_version = "7.7"
 
   shape = "VM.Standard.E2.1"
   state = "AVAILABLE"
